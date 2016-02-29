@@ -1,0 +1,50 @@
+:global {
+  @import 'base';
+  @import 'vendor/normalize';
+
+  // Some best-practice CSS that's useful for most apps
+  // Just remove them if they're not what you want
+  html {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .cell-grid {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .cell-row {
+    height: 10px;
+  }
+
+  .cell {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border: 1px solid gray;
+
+    &.alive {
+      background-color: red;
+    }
+  }
+
+  .start-button,
+  .stop-button,
+  .change-size-button {
+    margin-right: 10px;
+  }
+}
